@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>MEAL</title>
+</head>
+<body>
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+          <div class="container-fluid">
+              <a href="index.html" class="fs-3">Zomato</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav me-auto">
+              </ul>
+              <form class="d-flex">
+                  <ul class="navbar-nav">
+                      <div class="nav-item fs-3">
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#login">Log In</a>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#signup">Sign Up</a>
+                      </div>
+                      <style>
+                          a{
+                              color: black;
+                              padding: 3px;
+                              border-radius: 10px;
+                          }
+                          a:hover{
+                              background-color: rgb(194, 168, 168);
+                              color: rgb(255, 251, 3);
+                          }
+                      </style>
+                  </ul>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div>
+        <!-- Modal toggle for login -->
+        <div class="modal fade" id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="row">
+                          <div class="col-md-3 ">
+                              <select name="" id="" class="form-control email input">
+                                  <option value="">+91</option>
+                                  <option value="">+11</option>
+                                  <option value="">+01</option>
+                              </select>
+                          </div>
+                          <div class="col-md-9">
+                              <input type="number" class="form-control email input">
+                          </div>
+                      </div>
+                      <div class="row mt-3">
+                          <div class="col-md-12">
+                              <button class="btn btn-lg btn-xl btn-danger form-control">Send One Time Password</button>
+                          </div>
+                      </div>
+                      <div class="row mt-2">
+                         <div class="col-md-12">
+                          <center><span>or</span></center>
+                         </div>
+                      </div>
+  
+                      <div class="row mt-4">
+                          <div class="col-md-12">
+                              <div class="card">
+                                  <div class="card-body">
+                                      <center>
+                                          <i class="fa fa-envelope" aria-hidden="true" class="text-dark" style="font-size: 20px; color: rgb(255, 92, 92);">&nbsp; &nbsp; &nbsp; Continue With Email</i>
+                                      </center>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <div class="row mt-4">
+                          <div class="col-md-12">
+                              <div class="card">
+                                  <div class="card-body">
+                                      <center>
+                                          <i class="fab fa-google" aria-hidden="true" class="text-dark" style="font-size: 20px; color: rgb(255, 92, 92);">&nbsp; &nbsp; &nbsp; Continue With Google</i>
+                                      </center>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+  
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <!-- Modal toggle for Signup -->
+        <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="signup" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <input type="text" class="form-control" placeholder="Enter Name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <input type="email" class="form-control" placeholder="Enter Email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-check mt-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            I agree to Zomato's Terms of Service, Privacy Policy and Content Policies
+                        </label>
+                      </div>
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <button class="btn btn-lg btn-xl btn-danger form-control">Create Account</button>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                       <div c-ass="col-md-12">
+                        <center><span>or</span></center>
+                       </div>
+                    </div>
+
+                    
+
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <center>
+                                        <i class="fab fa-google" aria-hidden="true" class="text-dark" style="font-size: 20px; color: rgb(255, 92, 92);">&nbsp; &nbsp; &nbsp; Continue With Google</i>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="#login" class="nav-link text-dark">Already have an Account? <span style="color: rgb(255, 92, 92);">Login</span></a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <marquee bgcolor="#000080" style="color: #FFFFFF; font-family: Book Antiqua" behavior="alternate" ><h1 class="p-4">MEAL ITEMS</h1></marquee>
+    <!-- meal items -->
+    <div class="container px-2 py-1">
+        <div class="row gx-5 py-5">
+          <div class="col">
+           <div class="p-1 bg-warning" style="border-radius: 20px;">
+                <a href="">
+                    <img src="img/fry rice1.webp" alt="" height="200px" width="100%" style="border-radius: 20px;">
+                    <h3>Hotek Nayaab</h3>
+                      <div class="row">
+                        <div class="col-md-1">Rate</p></div>
+                        <div class="col-md-2 offset-md-7 fa fa-heart">2.3</div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-1">Bakery</div>
+                        <div class="col-md-1 offset-md-7">$200</div>
+                      </div>
+                </a>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-footer-muted bg-dark">
+                        <i class="text-muted">Last updated 3 mins ago</i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+           </div>
+          </div>
+          <div class="col">
+            <div class="p-2 bg-warning" style="border-radius: 20px;">
+                 <a href="">
+                     <img src="img/fry rice2.webp" alt="" height="200px" width="100%" style="border-radius: 20px;">
+                     <h3>Siddi Fast Food</h3>
+                       <div class="row">
+                         <div class="col-md-1">Rate</p></div>
+                         <div class="col-md-2 offset-md-7 fa fa-heart">3.1</div>
+                       </div>
+                       <div class="row">
+                         <div class="col-md-1">Chinese</div>
+                         <div class="col-md-1 offset-md-7">$100</div>
+                       </div>
+                 </a>
+                 <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-footer-muted bg-dark">
+                        <i class="text-muted">Last updated 30 mins ago</i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+           </div>
+           <div class="col">
+            <div class="p-2 bg-warning" style="border-radius: 20px;">
+                 <a href="">
+                     <img src="img/fry rice3.webp" alt="" height="200px" width="100%" style="border-radius: 20px;">
+                     <h3>Sai Charan Dhabha</h3>
+                       <div class="row">
+                         <div class="col-md-2">Rate</p></div>
+                         <div class="col-md-2 offset-md-7 fa fa-heart">3.8</div>
+                       </div>
+                       <div class="row">
+                         <div class="col-md-1">North Indian</div>
+                         <div class="col-md-1 offset-md-7">$250</div>
+                       </div>
+                 </a>
+                 <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-footer-muted bg-dark">
+                        <i class="text-muted">Last updated 3 mins ago</i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+           </div>
+           <div class="col">
+            <div class="p-2 bg-warning" style="border-radius: 20px;">
+                 <a href="">
+                     <img src="img/fry rice4.webp" alt="" height="200px" width="100%" style="border-radius: 20px;">
+                     <h3>Pokoda Point</h3>
+                       <div class="row">
+                         <div class="col-md-1">Rate</p></div>
+                         <div class="col-md-2 offset-md-7 fa fa-heart">4.1</div>
+                       </div>
+                       <div class="row">
+                         <div class="col-md-1">Arabian</div>
+                         <div class="col-md-1 offset-md-7">$1500</div>
+                       </div>
+                 </a>
+                 <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-footer-muted bg-dark">
+                        <i class="text-muted">Last updated 3 mins ago</i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+           </div>
+        </div>
+        <div class="row gx-5 py-5">
+          <div class="col">
+           <div class="p-1 bg-warning" style="border-radius: 20px;">
+                <a href="">
+                    <img src="img/fry rice5.webp" alt="" height="200px" width="100%" style="border-radius: 20px;">
+                    <h3>Hotel Nayaab</h3>
+                      <div class="row">
+                        <div class="col-md-1">Rate</p></div>
+                        <div class="col-md-2 offset-md-7 fa fa-heart">4.0</div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-1">Hydrabadi</div>
+                        <div class="col-md-1 offset-md-7">$300</div>
+                      </div>
+                </a>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-footer-muted bg-dark">
+                        <i class="text-muted">Last updated 3 mins ago</i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+           </div>
+          </div>
+          <div class="col">
+            <div class="p-2 bg-warning" style="border-radius: 20px;">
+                 <a href="">
+                     <img src="img/fry rice6.webp" alt="" height="200px" width="100%" style="border-radius: 20px;">
+                     <h3>Egg Curry</h3>
+                       <div class="row">
+                         <div class="col-md-1">Rate</p></div>
+                         <div class="col-md-2 offset-md-7 fa fa-heart">4.8</div>
+                       </div>
+                       <div class="row">
+                         <div class="col-md-1">Telgue</div>
+                         <div class="col-md-1 offset-md-7">$2300</div>
+                       </div>
+                 </a>
+                 <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-footer-muted bg-dark">
+                        <i class="text-muted">Last updated 2 hrs ago</i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+           </div>
+           <div class="col">
+            <div class="p-2 bg-warning" style="border-radius: 20px;">
+                 <a href="">
+                     <img src="img/fry rice7.webp" alt="" height="200px" width="100%" style="border-radius: 20px;">
+                     <h3>Shahi Zaiqa</h3>
+                       <div class="row">
+                         <div class="col-md-1">Rate</p></div>
+                         <div class="col-md-2 offset-md-7 fa fa-heart">4.9</div>
+                       </div>
+                       <div class="row">
+                         <div class="col-md-1">Mughlai</div>
+                         <div class="col-md-1 offset-md-7">$170</div>
+                       </div>
+                 </a>
+                 <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-footer-muted bg-dark">
+                        <i class="text-muted">Last updated few secs ago</i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+           </div>
+        </div>
+      </div>
+
+    <!-- footer -->
+    <div >
+      <footer style="background-color: #ffede7;">
+
+          <div class="container">
+              <div class="row pt-4">
+                <div class="col">
+                  <h2><b>ZOMATO</b></h2>
+                </div>
+                <div class="col-md-auto">
+                  <select name="country" id="" style="background-color: #ffc0cb73;">
+                      <option value=""><i class="fa-sharp fa-solid fa-flag-usa"></i>⛿ India</option>
+                      <option value="">🏳️‍🌈 Nepal</option>
+                      <option value="">Pakistan</option>
+                      <option value="">Bhutan</option>
+                      <option value=""></option>
+                  </select>
+                </div>
+                <div class="col col-lg-2">
+                  <select name="country" id="" style="background-color: #ffc0cb73;">
+                      <option value=""><i class="fa-sharp fa-solid fa-flag-usa"></i>🌐 English</option>
+                      <option value="">Nepali</option>
+                      <option value="">Hindi</option>
+                      <option value="">Japnese</option>
+                      <option value=""></option>
+                  </select>
+                </div>
+              </div>
+            </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 mb-0">
+              <h5 class="mb-3" style="letter-spacing: 2px; color: #7f4722;">ABOUT ZOMATO</h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1">
+                  <a href="#!" style="color: #4f4f4f;">Who We Are</a>
+                </li>
+                <li class="mb-1">
+                  <a href="#!" style="color: #4f4f4f;">Blog</a>
+                </li>
+                <li class="mb-1">
+                  <a href="#!" style="color: #4f4f4f;">Work With Us</a>
+                </li>
+                <li>
+                  <a href="#!" style="color: #4f4f4f;">Investor Relations</a>
+                </li>
+                <li>
+                  <a href="#!" style="color: #4f4f4f;">Report Fraud</a>
+                </li>
+                <li>
+                  <a href="#!" style="color: #4f4f4f;">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-0">
+              <h5 class="mb-3" style="letter-spacing: 2px; color: #7f4722;">ZOMAVERSE</h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1">
+                  <a href="#!" style="color: #4f4f4f;">Zomato</a>
+                </li>
+                <li class="mb-1">
+                  <a href="#!" style="color: #4f4f4f;">Blinkit</a>
+                </li>
+                <li class="mb-1">
+                  <a href="#!" style="color: #4f4f4f;">Feeding India</a>
+                </li>
+                <li>
+                  <a href="#!" style="color: #4f4f4f;">Hyperpure</a>
+                </li>
+                <li>
+                  <a href="#!" style="color: #4f4f4f;">Zomaland</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-4 mb-0">
+              <h5 class="mb-3" style="letter-spacing: 2px; color: #7f4722;">FOR RESTAURANTS</h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1">
+                  <a href="#!" style="color: #4f4f4f;">Partner With Us</a>
+                </li>
+                <li class="mb-1">
+                  <a href="#!" style="color: #4f4f4f;">Apps For You</a>
+                </li>
+                <li class="mb-1">
+                  <h5 class="mb-3" style="letter-spacing: 2px; color: #7f4722;">FOR EENTERPRISES</h5>
+                </li>
+                <li>
+                  <a href="#!" style="color: #4f4f4f;">Zomato For Enterprises</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-0">
+              <h5 class="mb-3" style="letter-spacing: 2px; color: #7f4722;">LEARN MORE</h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1">
+                  <a href="#!" style="color: #4f4f4f;">Privacy</a>
+                </li>
+                <li class="mb-1">
+                  <a href="#!" style="color: #4f4f4f;">Security</a>
+                </li>
+                <li class="mb-1">
+                  <a href="#!" style="color: #4f4f4f;">Terms</a>
+                </li>
+                <li>
+                  <a href="#!" style="color: #4f4f4f;">Sitemap</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-0">
+              <h5 class="mb-3" style="letter-spacing: 2px; color: #7f4722;">SOCIAL LINKS</h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-3 p-2">
+                  <span class="fab fa-telegram"></span>
+                  <span class="fab fa-facebook"></span>
+                  <span class="fab fa-instagram"></span>
+                  <span class="fab fa-twitter"></span>
+                  <span class="fab fa-youtube"></span>
+                <li class="mb-1">
+                  <img class="mb-2" src="img/link1.webp" alt=""height="40px">
+                </li>
+                <li class="mb-1">
+                  <img src="img/link.webp" alt="" height="40px">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="text-center p-3 m-10" style="background-color: rgba(0, 0, 0, 0.2);">
+          By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Ltd. All rights reserved.
+        </div>
+        <!-- Copyright -->
+      </footer>
+    
+    </div>
+<!-- End of .container -->
+</body>
+</html>
